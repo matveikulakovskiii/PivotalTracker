@@ -7,11 +7,51 @@
 </head>
 <body>
 <h1>Tarkvara sõnad</h1>
-<input type="button" value="juhuslik sõna" onclick="randomSona()">
-<div id="random-sona"></div>
-<label for="kontroll">Kirjuta sõna vene keeles</label>
-<input type="text" id="kontroll" oninput="">
-<input type="button" value="Kontroli" onclick="kontrollimine()">
-<div id="vastus"></div>
+<table style="border: black 1pt solid;">
+    <tr>
+        <td><input type="button" value="juhuslik sõna" onclick="randomSona()"></td>
+        <td><input type="button" value="juhuslik sõna" onclick="randomSona2()"></td>
+    </tr>
+    <tr>
+        <td>
+            <div id="random-sona"></div>
+        </td>
+        <td>
+            <div id="random-sona2"></div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="kontroll">Kirjuta sõna vene keeles</label>
+        </td>
+        <td>
+            <label for="kontroll2">Kirjuta sõna eesti keeles</label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="kontroll" oninput="">
+        </td>
+        <td>
+            <input type="text" id="kontroll2" oninput="">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" value="Kontroli" onclick="kontrollimine()">
+        </td>
+        <td>
+            <input type="button" value="Kontroli" onclick="kontrollimine2()">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div id="vastus"></div>
+        </td>
+        <td>
+            <div id="vastus2"></div>
+        </td>
+    </tr>
+</table>
 </body>
 </html>
